@@ -10,11 +10,11 @@ import { PageSignUpComponent } from './login/pages/page-sign-up/page-sign-up.com
 const routes: Routes = [
   {path: 'login', component: PageSignInComponent},
   {path: 'enregistrer', component: PageSignUpComponent},
-  {path: 'mot de passe perdu', component: PageForgotPasswordComponent},
-  {path: 'réinitialisation', component: PageSignUpComponent},
+  {path: 'motdepasseperdu', component: PageForgotPasswordComponent},
+  {path: 'reinitialisation', component: PageSignUpComponent},
   {path: 'client', component: PageListClientsComponent},
-  {path: 'Edition du client', component: PageEditClientComponent},
-  {path: 'Ajouter un client', component: PageAddClientComponent},
+  {path: 'Editionduclient', component: PageEditClientComponent},
+  {path: 'Ajouterunclient', component: PageAddClientComponent},
 
   {path: 'orders', loadChildren: () => import('./orders/orders.module').then((module) => module.OrdersModule)},
 
