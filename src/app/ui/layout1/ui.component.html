@@ -1,8 +1,17 @@
+<ng-template #iconclose >
+    <ng-content select=".tr-icon-close"></ng-content>
+</ng-template>
+<ng-template #iconnav>
+    <ng-content select=".tr-icon-nav"></ng-content>
+</ng-template>
 
 <div [ngClass]="{'closeaside':!bool}">
     <ng-content select=".tr-nav"></ng-content>
 </div>
+
 <ng-content select=".tr-header"></ng-content>
 <ng-content select=".tr-content"></ng-content>
 <ng-content select=".tr-footer"></ng-content>
-<span (click)="toggle()">Test</span>x
+<span (click)="toggle()">
+    <ng-container *ngIf="bool; then iconclose else iconnav"></ng-container>
+    Test</span>

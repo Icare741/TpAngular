@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-icon-delete',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class IconDeleteComponent {
 
+  public myicon= faTrash;
+  constructor() { }
+
+  ngOnInit(): void {
+  }
 }

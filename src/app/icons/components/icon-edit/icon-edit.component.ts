@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faEdit } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-icon-edit',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class IconEditComponent {
 
+  public myicon= faEdit;
+  constructor() { }
+
+  ngOnInit(): void {
+  }
 }

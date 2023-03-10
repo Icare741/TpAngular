@@ -4,6 +4,7 @@ import { IconNavComponent } from './components/icon-nav/icon-nav.component';
 import { IconCloseComponent } from './components/icon-close/icon-close.component';
 import { IconEditComponent } from './components/icon-edit/icon-edit.component';
 import { IconDeleteComponent } from './components/icon-delete/icon-delete.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 
@@ -15,10 +16,11 @@ import { IconDeleteComponent } from './components/icon-delete/icon-delete.compon
     IconDeleteComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FontAwesomeModule
   ],
   exports: [
-    IconNavComponent,
+    IconNavComponent, 
     IconCloseComponent,
     IconEditComponent,
     IconDeleteComponent
