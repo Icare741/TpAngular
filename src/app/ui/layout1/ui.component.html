@@ -9,9 +9,9 @@
     <ng-content select=".tr-nav"></ng-content>
 </div>
 
-<ng-content select=".tr-header"></ng-content>
-<ng-content select=".tr-content"></ng-content>
-<ng-content select=".tr-footer"></ng-content>
 <span (click)="toggle()">
     <ng-container *ngIf="bool; then iconclose else iconnav"></ng-container>
     Test</span>
+<ng-content select=".tr-header"></ng-content>
+<ng-content select=".tr-content"></ng-content>
+<ng-content select=".tr-footer"></ng-content>
