@@ -1,0 +1,21 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { UiComponent } from './layout1/ui.component';
+import { Ui2Component } from './layout2/ui2.component';
+
+
+
+@NgModule({
+  declarations: [
+    UiComponent,
+    Ui2Component
+  ],
+  exports: [
+    UiComponent,
+    Ui2Component,
+  ],
+  imports: [
+    CommonModule
+  ]
+})
+export class UiModule { }

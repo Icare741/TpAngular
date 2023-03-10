@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="nav.component.css">
+
+<nav>
+    <a [routerLink]="['/sign-up']">Se connecter</a>
+    <div>
+        <ul>
+            <li><a (click)="incrementVersion()">Incrementer version</a></li>
+            <li><a (click)="decrementVersion()">Decrementer</a></li>
+            <li><a [routerLink]="['/sign-up']">S'enregistrer</a></li>
+            <li><a [routerLink]="['/forgot-password']">Mot de passe perdu</a></li>
+            <li><a [routerLink]="['/reset-password']">Réinitialisation</a></li>
+            <li><a >version : {{version}}</a></li>
+        </ul>  
+
+    </div>
+    
+</nav>
+
+   
