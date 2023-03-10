@@ -7,9 +7,9 @@
         <ul>
             <li><a (click)="incrementVersion()">Incrementer version</a></li>
             <li><a (click)="decrementVersion()">Decrementer</a></li>
-            <li><a [routerLink]="['/sign-up']">S'enregistrer</a></li>
-            <li><a [routerLink]="['/forgot-password']">Mot de passe perdu</a></li>
-            <li><a [routerLink]="['/reset-password']">Réinitialisation</a></li>
+            <li><a [routerLink]="['logins/enregistrer']">S'enregistrer</a></li>
+            <li><a [routerLink]="['logins/motdepasseperdu']">Mot de passe perdu</a></li>
+            <li><a [routerLink]="['logins/reinitialisation']">Réinitialisation</a></li>
             <li><a>version : {{version}}</a></li>
             <li> <a [routerLink]="['/orders']">
                     Route orders

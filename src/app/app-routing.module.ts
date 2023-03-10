@@ -8,15 +8,12 @@ import { PageSignInComponent } from './login/pages/page-sign-in/page-sign-in.com
 import { PageSignUpComponent } from './login/pages/page-sign-up/page-sign-up.component';
 
 const routes: Routes = [
-  {path: 'login', component: PageSignInComponent},
-  {path: 'enregistrer', component: PageSignUpComponent},
-  {path: 'motdepasseperdu', component: PageForgotPasswordComponent},
-  {path: 'reinitialisation', component: PageSignUpComponent},
-  {path: 'client', component: PageListClientsComponent},
-  {path: 'Editionduclient', component: PageEditClientComponent},
-  {path: 'Ajouterunclient', component: PageAddClientComponent},
+  
+  
 
   {path: 'orders', loadChildren: () => import('./orders/orders.module').then((module) => module.OrdersModule)},
+  {path: 'clients', loadChildren: () => import('./clients/clients.module').then((module) => module.ClientsModule)},
+  {path: 'logins', loadChildren: () => import('./login/login.module').then((module) => module.LoginModule)},
 
 ];
 
