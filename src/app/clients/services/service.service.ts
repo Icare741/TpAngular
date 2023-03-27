@@ -1,9 +1,15 @@
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ServiceService {
 
-  constructor() { }
+  public objectToShare: Observable<Object>
+  constructor(private http : HttpClient) {
+    this.objectToShare = this.http.get('https://localhost:3000/users')
+   }
+
 }
