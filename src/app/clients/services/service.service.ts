@@ -9,7 +9,7 @@ export class ServiceService {
 
   public objectToShare: Observable<Object>
   constructor(private http : HttpClient) {
-    this.objectToShare = this.http.get('https://localhost:3000/users')
+    this.objectToShare = this.http.get('http://localhost:3000/clients')
    }
 
 }
