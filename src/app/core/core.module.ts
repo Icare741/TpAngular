@@ -9,6 +9,8 @@ import { LoginModule } from '../login/login.module';
 import { LoginRoutingModule } from '../login/login-routing.module';
 import { RouterModule } from '@angular/router';
 import { FooterComponent } from './components/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 
@@ -18,6 +20,7 @@ import { FooterComponent } from './components/footer/footer.component';
     NavComponent,
     HeaderComponent,
     FooterComponent
+
   ],
   exports: [
     UiModule,
@@ -27,14 +30,15 @@ import { FooterComponent } from './components/footer/footer.component';
     NavComponent,
     FooterComponent,
     HeaderComponent,
-    
-    
-   
+
+
+
   ],
   imports: [
     CommonModule,
     TemplatesModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule
   ]
 })
 export class CoreModule { }
